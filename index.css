@@ -1,0 +1,176 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: TESLA;
+    src: url(assets/fonts/tesla/TESLA.ttf)
+}
+
+@font-face {
+    font-family: Carmen-semibold;
+    src: url(assets/fonts/carmen/Carmen\ Sans\ SemiBold.otf)
+}
+
+@font-face {
+    font-family: Carmen-regular;
+    src: url(assets/fonts/carmen/Carmen\ Sans\ Regular.otf)
+}
+
+header {
+    position: sticky;
+    z-index: 2;
+    width: 100vw;
+    height: 0;
+    top: 0;
+}
+
+header a {
+    text-decoration: none;
+    font: .9em Carmen-semibold, sans-serif;
+    color: rgb(24, 22, 34);
+}
+
+header nav {
+    position: relative;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding: 25px 35px 25px 35px;
+    gap: 30px;
+}
+
+header ul li:nth-child(1) a {
+    font: 1.3em TESLA, sans-serif;
+    letter-spacing: 8px;
+}
+
+header ul li:nth-child(2) {
+    margin-left: auto;
+}
+
+header ul li:nth-child(7) {
+    margin-right: auto;
+}
+
+#interface {
+    position: sticky;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#interface h2 {
+    position: absolute;
+    font: 2.5em Carmen-semibold, sans-serif;
+    top: 44px;
+    width: 100%;
+    text-align: center;
+}
+
+#interface .tryout {
+    position: absolute;
+    font: .9em Carmen-regular, sans-serif;
+    color: rgb(24, 22, 34);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    top: 100px;
+    width: 100%;
+    text-align: center;
+}
+
+#interface div {
+    position: absolute;
+    bottom: 180px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#interface button {
+    border-radius: 28px;
+    outline: none;
+    border: none;
+    padding: 5px 20px 5px 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 250px;
+    height: 40px;
+    color: rgb(70, 70, 70);
+    cursor: pointer;
+}
+
+#interface button:nth-child(1) {
+    background-color: rgb(61, 61, 61);
+    color: rgb(230, 230, 230);
+}
+
+#interface .description {
+    position: absolute;
+    font: .7em Carmen-regular, sans-serif;
+    bottom: 130px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color:rgb(24, 22, 34);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.image {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.image:nth-child(1) {
+    background-image: url(assets/images/Desktop-ModelY.jpg);
+}
+
+.image:nth-child(2) {
+    background-image: url(assets/images/Desktop-Model3.jpg);
+}
+
+.image:nth-child(3) {
+    background-image: url(assets/images/Desktop-ModelS.jpg);
+}
+
+.image:nth-child(4) {
+    background-image: url(assets/images/Desktop-ModelX.jpg);
+}
+
+.image:nth-child(5) {
+    background-image: url(assets/images/Desktop-SolarPanels.jpg);
+}
+
+.image:nth-child(6) {
+    background-image: url(assets/images/Desktop-Accessories.jpg);
+}
+
+@media screen and (max-width: 1150px) {
+    header li:nth-child(1n+2):not(:last-child) {
+        display: none;
+    }
+
+    header ul li:last-child {
+        margin-left: auto;
+        background-color: rgba(128, 128, 128, 0.13);
+        height: 30px;
+        width: 70px;
+        text-align: center;
+        padding: 7px 8px 0 8px;
+        border-radius: 15px;
+    }
+}
